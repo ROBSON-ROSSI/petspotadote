@@ -50,20 +50,21 @@ nav a {
 /* ------ */
 /* CARROSSEL LAND PAGE TESTE */
 
-* {
+/* * {
     box-sizing: border-box;
-  }
+  } */
   
   img {
     vertical-align: middle;
   }
   
-  /* Position the image container (needed to position the left and right arrows) */
+  /* Posição container (needed to position the left and right arrows) */
   .container {
     position: relative;
+    margin: 0 10%;
   }
   
-  /* Hide the images by default */
+  /* Esconde as imagens */
   .mySlides {
     display: none;
   }
