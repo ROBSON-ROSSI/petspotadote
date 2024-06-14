@@ -39,7 +39,9 @@ nav a{
     width: 100%;
     height: 500px;
     background-color: black;
-    position: relative; 
+     position: relative;
+    display: flex;
+    
 }
 
 .btn-voltar-slide{
@@ -49,7 +51,18 @@ nav a{
     top: 45%;
     font-size: 2em;
     cursor: pointer;
+    visibility: hidden;
     
+}
+.div-banner{
+    display: flex;
+    flex-direction: row;
+    transition: 2s;
+    
+}
+
+.div-banner img{
+    width :1920px;
 }
 
 .btn-next-slide{
