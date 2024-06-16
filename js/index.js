@@ -5,6 +5,8 @@ var img1 = document.getElementById('img1');
 var img2 = document.getElementById('img2');
 var img3 = document.getElementById('img3');
 var img4 = document.getElementById('img4');
+var carrossel_testemunhos = document.getElementById('img-testemunhos1');
+
 
 //ESSE BLOCO EXECUTA O CARROSSEL PELO CLICK NAS SETAS
 //================================================================
@@ -76,3 +78,48 @@ function voltar(){
 proximo();
 
 //=====================================================================
+//ESSE BLOCO EXECUTA O CARROSSEL DOS TESTEMUNHOS
+var controle = 0;
+
+function next_testemunhos (){
+
+ const ida = setInterval(() => {
+
+     if(controle == -1440){
+        clearInterval(ida);
+        back_testemunhos();
+     } else {
+      controle += -360;
+      carrossel_testemunhos.style.marginLeft = controle +'px';
+      carrossel_testemunhos.style.transition = '2s';
+
+     }
+    
+     
+  },100);
+
+}
+
+function back_testemunhos (){
+
+  const voltar = setInterval(() => {
+ 
+      if(controle == 0){
+         clearInterval(voltar);
+         next_testemunhos();
+      } else {
+       controle += +360;
+       carrossel_testemunhos.style.marginLeft = controle +'px';
+       carrossel_testemunhos.style.transition = '2s';
+ 
+      }
+     
+      
+   },3000);
+ 
+ }
+next_testemunhos(); // CHAMA A FUNÇÃO PARA INICIAR O CARROSSEL AUTOMATICO
+
+//======================================================================================================
+
+

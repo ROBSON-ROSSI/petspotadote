@@ -242,6 +242,57 @@ picture img{
     font-family:  var(--fontInter);
 }
 
+.area-testemunhos{
+    width: 100%;
+    max-width: 1920px;
+    height: 1060px;
+   
+}
+
+
+
+.area-testemunhos h2{
+    margin-left: 10%;
+}
+
+.div-img-testemunhos > .div-conteudo-testemunhos{
+  position: absolute;
+  width: 570px;
+  height: 700px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  padding: 20px;
+  background-color: rgb(240, 194, 194);
+}
+
+.area-testemunhos > .div-img-testemunhos{
+    background-color: gray;
+    width: 100%;
+    max-width: 1920px;
+    height: 700px;
+    position: relative;
+}
+
+.area-testemunhos > .div-carrossel-testemunhos{
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    height: 360PX;
+    flex-direction: row;
+    
+}
+
+.div-carrossel-testemunhos .div-cards-testemunhos{
+   width: 100%; 
+   max-width: 360px;
+   
+  
+   border: 1px solid black;
+   
+}
+
 /* ------ */
 /* FOOTER */
 
