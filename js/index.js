@@ -5,6 +5,9 @@ var img1 = document.getElementById('img1');
 var img2 = document.getElementById('img2');
 var img3 = document.getElementById('img3');
 var img4 = document.getElementById('img4');
+
+//ESSE BLOCO EXECUTA O CARROSSEL PELO CLICK NAS SETAS
+//================================================================
 var marg = 0; 
 btn_voltar.addEventListener('click', () => {
 
@@ -12,12 +15,12 @@ btn_voltar.addEventListener('click', () => {
     btn_voltar.style.visibility = 'hidden';
     marg = marg + 1920;
     img1.style.marginLeft = `${marg}`+'px';
-    img1.style.transition = '1s';
+    img1.style.transition = '3s';
   } else {
   
   marg = marg + 1920;
   img1.style.marginLeft = `${marg}`+'px';
-  img1.style.transition = '1s';
+  img1.style.transition = '3s';
   btn_next.style.visibility = 'visible';
   }
 });
@@ -27,13 +30,49 @@ btn_next.addEventListener('click', () => {
     btn_next.style.visibility = 'hidden';
     marg = marg - 1920;
     img1.style.marginLeft = `${marg}`+'px';
-    img1.style.transition = '1s';
+    img1.style.transition = '3s';
   
   } else {
   btn_voltar.style.visibility = 'visible';
   marg = marg - 1920;
   img1.style.marginLeft = `${marg}`+'px';
-  img1.style.transition = '1s';
-  //alert(marg);
+  img1.style.transition = '3s';
+
   }
-})
+});
+//EXECUTA O CARROSEL AUTOMATICO
+//=======================================================================
+function proximo(){
+
+const next = setInterval( () => {
+  if(marg > -5760){
+    
+    btn_next.click();
+  } else {
+  
+    clearInterval(next);
+    voltar();
+    
+  }
+},10000)
+}
+
+
+
+function voltar(){
+
+  const back = setInterval(()=>{
+    if(marg == 0){
+      clearInterval(back);
+      proximo();
+    } else {
+      btn_voltar.click();
+    }
+    
+  },10000);
+
+}
+
+proximo();
+
+//=====================================================================
