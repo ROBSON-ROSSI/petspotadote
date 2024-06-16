@@ -42,7 +42,7 @@ btn_next.addEventListener('click', () => {
 
   }
 });
-//EXECUTA O CARROSEL AUTOMATICO
+//EXECUTA O CARROSSEL AUTOMATICO
 //=======================================================================
 function proximo(){
 
