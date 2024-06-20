@@ -6,6 +6,18 @@ var img2 = document.getElementById('img2');
 var img3 = document.getElementById('img3');
 var img4 = document.getElementById('img4');
 var carrossel_testemunhos = document.getElementById('img-testemunhos1');
+var btn_aceito = document.getElementById('btn-aceito');
+var btn_rejeito = document.getElementById('btn-rejeito');
+var cookies = document.querySelector('.ativo');
+
+
+btn_aceito.addEventListener('click', () => {
+    cookies.style.visibility = 'hidden';
+});
+
+btn_rejeito.addEventListener('click', () => {
+  cookies.style.visibility = 'visibility';
+});
 
 
 //ESSE BLOCO EXECUTA O CARROSSEL PELO CLICK NAS SETAS

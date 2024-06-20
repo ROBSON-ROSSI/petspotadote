@@ -297,7 +297,9 @@ picture img{
 }
 
 /* Cookie  */
-
+.ativo{
+    visibility: visible;
+}
 .div-cookie{
     width: 90%;
     height: auto;
