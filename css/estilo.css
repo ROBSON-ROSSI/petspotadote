@@ -62,7 +62,10 @@ nav a{
 }
 
 .div-banner img{
-    width :1920px;
+    /* width :1920px; */
+    width: 100%;
+    max-width: 1920px;
+    
 }
 
 .btn-next-slide{
@@ -77,15 +80,16 @@ nav a{
 .div-conteudo-slide{
     width: 90vw;
     max-width: 1314px;
-    background-color: white;
+    background-color: var(--CorHeader);
     height: 200px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 20px;
     position: relative;
     bottom: 100px;
     align-self: center;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .rotulo {
