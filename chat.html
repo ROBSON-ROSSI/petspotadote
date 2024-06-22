@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de grid</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <header>
+        <div class="contaner">
+            <nav>
+                <a href="#" id="m1">Contato</a>
+                <a href="#" id="m2">Adoção</a>
+                <a href="#" id="logo">Logo
+                    <img id="btn-menu" src="imagens/icones/menu_50px.png" alt="">
+                </a>
+                <a href="#" id="m3">Fale Conosco</a>
+                <a href="#" id="m4">Login</a>
+            </nav>
+        </div>
+    </header>
+    <div class="div-menu-usuario">
+        <div class="div-usuario-img">
+
+        </div>
+        <div class="div-status-usuario">
+            <span id="usurio">Stephanie</span>
+            <span id="status-usurio">Online</span>
+        </div>
+    </div>
+
+    <div class="div-contaner-chat">
+        <div class="div-usuario-online">
+            <form id="form-pesquisa-usuario" action="" method="post">
+                <input type="text" placeholder="Pesquisa">
+            </form>
+            <div class="card-usuario-online">
+                <div class="div-usuario-img">
+
+                </div>
+
+                <div class="div-status-usuario">
+                    <span id="card-usurio">Stephanie</span>
+                    <span id="card-status-usurio">Online</span>
+                </div>
+                <span id="status-horas">12:00</span>
+
+            </div>
+
+            <!--  -->
+            <div class="card-usuario-online">
+                <div class="div-usuario-img">
+
+                </div>
+
+                <div class="div-status-usuario">
+                    <span id="card-usurio">Stephanie</span>
+                    <span id="card-status-usurio">Online</span>
+                </div>
+                <span id="status-horas">12:00</span>
+
+            </div>
+
+        </div>
+        <div class="div-sala-batepapo">
+            <div class="div-sala">
+                         sala
+            </div>
+            <div class="div-panel-envio">
+                <textarea name="msg" id="msg-envia" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                <!-- <input id="msg-envia" type="text" placeholder="Digite a sua menssagem"> -->
+                <img class="icones-envio" id="envio-emoji" src="imagens/icones/happy.svg" alt="">
+                <img class="icones-envio" id="envio-imagens" src="imagens/icones/attach.svg" alt="">
+                <button id="btn-envia">Enviar</button>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+    <!-- <img id="ico-chat" src="imagens/icones/chat.svg" alt=""> -->
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
