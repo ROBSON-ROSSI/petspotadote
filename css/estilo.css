@@ -31,6 +31,21 @@ nav a{
     font-size: 2em;
     
 }
+nav h2{
+    font-family: var(--fontBaloo);
+    font-size: 2em;
+}
+.logo{
+    width: 100%;
+    max-width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #btn-menu{
     display: none;
