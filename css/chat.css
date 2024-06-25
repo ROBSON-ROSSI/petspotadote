@@ -60,6 +60,7 @@
     display: flex;
     flex-direction: column;
     background-color: white;
+    overflow: hidden;
     
 
 }
@@ -82,6 +83,7 @@
     align-items: center;
     gap: 15px;
     border: 1px solid gray;
+    overflow: hidden;
 }
 #btn-envia{
     width: 150px;
@@ -103,13 +105,20 @@
 
 .div-panel-envio textarea{
     width: 64%;
-    line-height: 22px;
+    height: 100px;
+    line-height: 25px;
     font-size: 1.5em;
     padding: 20px;
     font-family: var(--fontInter);
     outline: none;
     border: none;
     
+}
+
+.div-panel-envio textarea::-webkit-scrollbar{
+    width: 7px;
+    background-color: var(--CorHeader);
+    border-radius: 20px;
 }
 
 #form-pesquisa-usuario{
