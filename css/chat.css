@@ -57,10 +57,11 @@
 .div-usuario-online{
     border: 1px solid black;
     width: 20%;
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: white;
     overflow: hidden;
+   
     
 
 }
@@ -85,6 +86,37 @@
     border: 1px solid gray;
     overflow: hidden;
 }
+
+
+
+.div-menu-emoji{
+    width: 100%;
+    position: fixed;
+    height: 150px;
+    background-color: white;
+    bottom:100px ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    border-top: 1px solid gray;
+    align-items: center;
+    overflow: auto;
+}
+
+.div-menu-emoji .icons-emo{
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+
+
+}
+
+.div-menu-emoji.close-menu{
+    display: none;
+}
 #btn-envia{
     width: 150px;
     height: 50px;
@@ -96,6 +128,7 @@
     font-family: var(--fontInter);
     border: 1px solid #f3f2f0;
     cursor: pointer;
+    margin-right: 20px;
 }
 .icones-envio{
     width: 36px;
@@ -104,7 +137,7 @@
 }
 
 .div-panel-envio textarea{
-    width: 64%;
+    width: 100%;
     height: 100px;
     line-height: 25px;
     font-size: 1.5em;
