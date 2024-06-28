@@ -313,6 +313,10 @@ picture img{
    border: 1px solid black;   
 }
 
+.btn-voltar-slide2 .btn-next-slide2 {
+    display: none;
+}
+
 /* Cookie  */
 .ativo{
     visibility: visible;
