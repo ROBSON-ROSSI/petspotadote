@@ -54,6 +54,8 @@ btn_next.addEventListener('click', () => {
 
   }
 });
+
+
 //EXECUTA O CARROSSEL AUTOMATICO
 //=======================================================================
 function proximo(){
@@ -134,4 +136,36 @@ next_testemunhos(); // CHAMA A FUNÇÃO PARA INICIAR O CARROSSEL AUTOMATICO
 
 //======================================================================================================
 
+// CARROSSEL TESTEMUNHOS VERSÃO MOBILE
+var marg = 0; 
+btn_voltar2.addEventListener('click', () => {
 
+  if(marg == -1920) {
+    btn_voltar2.style.visibility = 'hidden';
+    marg = marg + 1920;
+    img1.style.marginLeft = `${marg}`+'px';
+    img1.style.transition = '3s';
+  } else {
+  
+  marg = marg + 1920;
+  img1.style.marginLeft = `${marg}`+'px';
+  img1.style.transition = '3s';
+  btn_next2.style.visibility = 'visible';
+  }
+});
+
+btn_next2.addEventListener('click', () => {
+  if(marg == -3840){
+    btn_next2.style.visibility = 'hidden';
+    marg = marg - 1920;
+    img1.style.marginLeft = `${marg}`+'px';
+    img1.style.transition = '3s';
+  
+  } else {
+  btn_voltar2.style.visibility = 'visible';
+  marg = marg - 1920;
+  img1.style.marginLeft = `${marg}`+'px';
+  img1.style.transition = '3s';
+
+  }
+});
