@@ -5,7 +5,7 @@ const rotas = require('../routes/rotas');
 
 const app = express();
 app.use(express.json());
-app.use(express.static('C:\\Users\\755179\\OneDrive\\petspot\\css'));
+app.use(express.static('C:\\Users\\755179\\OneDrive\\petspot\\assets'));
 app.use(rotas);
 app.listen(PORT, () => {
     console.log('Servidor Web rodando na porta:'+PORT);
