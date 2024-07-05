@@ -3,14 +3,16 @@ const cors = require('cors');
 const PORT = process.env.PORT || 3000;
 const rotas = require('../routes/rotas');
 const sessao = require('express-session');
+const flash = require('flash');
 
 
 const app = express();
 //Cria a sessão do usuario
 app.use(sessao({secret: '123456teste',
-    saveUninitialized: false,
-    resave: false
+    saveUninitialized: true,
+    resave: true
 }));
+app.use(flash());
 
 app.use(rotas);
 app.use(express.json());
