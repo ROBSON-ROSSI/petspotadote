@@ -4,9 +4,10 @@ const PORT = process.env.PORT || 3000;
 const rotas = require('../routes/rotas');
 
 const app = express();
-app.use(express.json());
-app.use(express.static('C:\\Users\\755179\\OneDrive\\petspot\\assets'));
 app.use(rotas);
+app.use(express.json());
+app.use(express.static('C:\\Users\\robson.rleite\\OneDrive\\petspot\\assets'));
+
 app.listen(PORT, () => {
     console.log('Servidor Web rodando na porta:'+PORT);
 })
