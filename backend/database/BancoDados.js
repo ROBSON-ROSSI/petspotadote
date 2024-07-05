@@ -5,7 +5,7 @@ var cone =  mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'contatos'
+    database: 'dtiestoque'
   });
 
   function conexao(){
