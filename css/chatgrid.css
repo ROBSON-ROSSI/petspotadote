@@ -1,0 +1,130 @@
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100px 1fr 70px;
+    grid-template-areas: 
+    "header header"
+    "online sala"
+    "logo msg";
+    overflow: hidden;
+}
+
+.div-chat-header{
+    color: wheat;
+    grid-area: header;
+    background-color: var(--CorHeader);
+}
+/* Bloco dos usuarios onlines */
+.div-chat-online{
+    color: wheat;
+    grid-area: online;
+    overflow: auto;
+    
+}
+.div-card-menu{
+  
+   width: 100%;
+   height: 40px;
+   
+
+   
+}
+
+.div-card-menu h1{
+    background-color: var(--CorHeader);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+.div-card{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    
+}
+
+/* Fim do bloco */
+
+/* ESSE BLOCO É DO CAMPO DE ESCREVER E ENVIAR MSG */
+.div-envio-msg{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 0.50fr 1fr;
+    border-top: 1px solid gray;
+}
+.div-envio-msg textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+}
+.msg-ico{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.msg-ico img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-envia-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn-envia-msg button{
+    padding: 14px 25px;
+    border: none;
+    background-color: var(--CorHeader);
+    border-radius: 15px;
+    color: white;
+    font-size: clamp(1.5em,10vw,0.8em);
+    cursor: pointer;
+}
+
+.div-envio-msg{
+    grid-area: msg;
+    background-color: white;
+}
+
+/* FIM DO BLOCO */
+
+.div-chat-sala{
+    color: wheat;
+    grid-area: sala;
+    background-color: white;
+    position: relative;
+} 
+
+
+
+.div-chat-logo{
+    color: white;
+    grid-area: logo;
+    background-color: var(--CorHeader);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontBaloo);
+    font-size: clamp(1.2em, 100%, 3em )
+    
+}
+
+footer{
+    color: wheat;
+    grid-area: footer;
+    background-color: chocolate;
+}
