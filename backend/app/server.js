@@ -16,7 +16,7 @@ app.use(flash());
 
 app.use(rotas);
 app.use(express.json());
-app.use(express.static(__dirname +'..\assets'));
+app.use(express.static(__dirname +''));
 
 // Liga o servidor e abre a porta 3000
 app.listen(PORT, () => {
