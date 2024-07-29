@@ -4,107 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de grid</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/chat.css">
+    <title>flex grow</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/chat.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div class="contaner">
-            <nav>
-                <a href="#" id="m1">Contato</a>
-                <a href="#" id="m2">Adoção</a>
-                <a href="#" id="logo">Logo
-                    <img id="btn-menu" src="imagens/icones/menu_50px.png" alt="">
-                </a>
-                <a href="#" id="m3">Fale Conosco</a>
-                <a href="#" id="m4">Login</a>
-            </nav>
+        <h1>PETSPOT</h1>
+
+        <div class="div-logout">
+            <a href="#" id="btn-sair-chat">Sair</a>
         </div>
     </header>
-    <div class="div-menu-usuario">
-        <div class="div-usuario-img">
-
+    <div class="div-status">
+        <div class="div-foto">
+            <img src="imagens/foto.png" alt="">
         </div>
+
         <div class="div-status-usuario">
-            <span id="usurio">Stephanie</span>
-            <span id="status-usurio">Online</span>
+            <h3>Robson</h3>
+            <h4>Online</h4>
         </div>
+
+
     </div>
-
-    <div class="div-contaner-chat">
-        <div class="div-usuario-online">
-            <form id="form-pesquisa-usuario" action="" method="post">
-                <input type="text" placeholder="Pesquisa">
-            </form>
-            <div class="card-usuario-online">
-                <div class="div-usuario-img">
-
+    <main>
+        <div class="div-online">
+            <div class="div-pesquisa-usuario">
+                <div class="div-input">
+                    <input type="text" placeholder="Pesquisa" id="imput-pesquisa">
                 </div>
-
-                <div class="div-status-usuario">
-                    <span id="card-usurio">Stephanie</span>
-                    <span id="card-status-usurio">Online</span>
+                <div class="div-ico-pesquisa">
+                    <a href="#" id="btn-buscar">Buscar</a>
                 </div>
-                <span id="status-horas">12:00</span>
-
             </div>
 
-            <!--  -->
-            <div class="card-usuario-online">
-                <div class="div-usuario-img">
+            <div class="div-lista-usuarios">
+                <!-- <div class="div-card-usuario">
+                    <div class="div-foto-usuario">
+                        <img src="imagens/foto.png" alt="">
+                    </div>
+                    <div class="div-status-card">
+                        <h2>Robson</h2>
+                        <h3>Online</h3>
+                    </div>
+                    <div class="div-btn-usuario">
+                        <a href="#">Chamar</a>
+                    </div>
+                </div> -->
 
-                </div>
+                <!-- teste -->
 
-                <div class="div-status-usuario">
-                    <span id="card-usurio">Stephanie</span>
-                    <span id="card-status-usurio">Online</span>
-                </div>
-                <span id="status-horas">12:00</span>
 
+                <!-- fim -->
+            </div>
+
+            <div class="div-banner-chat">
+                <h2 id="btn-banner">CHAT PETSPOT</h2>
             </div>
 
         </div>
-        <div class="div-sala-batepapo">
-            <div class="div-sala">
-                         sala
+        <div class="div-sala">
+            <div class="mostrar-lista">
+                <div class="div-mostrar">
+                    <span>Usuarios Online</span>
+                </div>
             </div>
-            <div class="div-menu-emoji close-menu">
-                <img class="icons-emo" src="https://i.gifer.com/5xPb.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/W9jt.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/WG8M.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/YX4f.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/2iFd.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/4L4A.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/yu9.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/Z6W2.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/5UKF.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/4Mj.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/2K8.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/14UM.gif" alt="">
-                <img class="icons-emo" src="https://i.gifer.com/42yI.gif" alt="">
-
-
+            <div class="div-chat">
+               
             </div>
-            <div class="div-panel-envio">
-                <textarea name="msg" id="msg-envia" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-                <!-- <input id="msg-envia" type="text" placeholder="Digite a sua menssagem"> -->
-                <img class="icones-envio" id="envio-emoji" src="imagens/icones/happy.svg" alt="">
-                <img class="icones-envio" id="envio-imagens" src="imagens/icones/attach.svg" alt="">
-                <button id="btn-envia">Enviar</button>
+            <div class="div-emoji">
+                <img src="https://i.gifer.com/5xPb.gif" alt="">
+                <img src="https://i.gifer.com/W9jt.gif" alt="">
+                <img src="https://i.gifer.com/WG8M.gif" alt="">
+                <img src="https://i.gifer.com/YX4f.gif" alt="">
+                <img src="https://i.gifer.com/2iFd.gif" alt="">
+                <img src="https://i.gifer.com/4L4A.gif" alt="">
+                <img src="https://i.gifer.com/yu9.gif" alt="">
+                <img src="https://i.gifer.com/2QwN.gif" alt="">
+                <img src="https://i.gifer.com/Z6W2.gif" alt="">
+                <img src="https://i.gifer.com/5UKF.gif" alt="">
+                <img src="https://i.gifer.com/4Mj.gif" alt="">
+                <img src="https://i.gifer.com/2K8.gif" alt="">
+
+                <!-- teste -->
+
+                <img src="https://i.gifer.com/5xPb.gif" alt="">
+                <img src="https://i.gifer.com/W9jt.gif" alt="">
+                <img src="https://i.gifer.com/WG8M.gif" alt="">
+                <img src="https://i.gifer.com/YX4f.gif" alt="">
+                <img src="https://i.gifer.com/2iFd.gif" alt="">
+                <img src="https://i.gifer.com/4L4A.gif" alt="">
+                <img src="https://i.gifer.com/yu9.gif" alt="">
+                <img src="https://i.gifer.com/2QwN.gif" alt="">
+                <img src="https://i.gifer.com/Z6W2.gif" alt="">
+                <img src="https://i.gifer.com/5UKF.gif" alt="">
+                <img src="https://i.gifer.com/4Mj.gif" alt="">
+                <img src="https://i.gifer.com/2K8.gif" alt="">
             </div>
 
-            
-
+            <div class="div-msg">
+                <div class="div-text-msg">
+                    <textarea name="txt-msg" id="txt-msg" placeholder="Digite sua Mensagem"></textarea>
+                </div>
+                <div class="div-ico">
+                    <img id="emoji" src="imagens/icones/happy.svg" alt="">
+                    <img id="fotos" src="imagens/icones/attach.svg" alt="">
+                </div>
+                <div class="div-btn">
+                    <a href="#" id="btn-send-msg">Enviar</a>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <!-- <img id="ico-chat" src="imagens/icones/chat.svg" alt=""> -->
-
-    <script src="js/index.js"></script>
-    <script src="js/chat.js"></script>
+    </main>
+    
+   
 </body>
 
 </html>
