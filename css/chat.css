@@ -1,415 +1,200 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
+.div-menu-usuario{
     background-color: var(--CorHeader);
-
+    height: 87px;
     display: flex;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 }
 
-header h1 {
-    color: white;
-    font-family: var(--fontBaloo);
-    flex-grow: 1;
-    padding: 20px 20px;
-
-}
-
-.div-status {
-    flex-basis: 50px;
-    display: flex;
-    border-bottom: 1px solid gray;
-    padding: 5px 10px;
-    gap: 10px;
-    background-color: var(--CorHeader);
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.div-status img {
-    max-width: 60px;
-    min-height: 60px;
+.div-menu-usuario .div-usuario-img{
+    background-color: white;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-}
-
-.div-foto {}
-
-.div-status-usuario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-}
-
-.div-logout {
-    flex-basis: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.div-logout a {
-    background-color: white;
-    padding: 5px 30px;
-    border-radius: 10px;
-    font-family: var(--fontInter);
-    cursor: pointer;
-
-}
-
-main {
-
-    flex-grow: 1;
-    display: flex;
-}
-
-.mostrar-lista {
-
-    flex-basis: 40px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.div-mostrar {
-    background-color: var(--CorHeader);
-    width: 200px;
-    font-family: var(--fontBaloo);
-    font-size: 1.3em;
-    color: white;
-    cursor: pointer;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.div-online {
-
-    flex-basis: 250px;
-    display: none;
-    flex-direction: column;
-    min-width: 250px;
-    background-color: var(--CorHeader);
-    margin-left: 5px;
-    margin-bottom: 5px;
-
-
-}
-.div-lista-usuarios {
-    background-color: white;
-    overflow: auto;
-
-
-}
-
-.div-sala {
+    margin-left: 20px;
     
-    flex-grow: 1;
+    
+}
+
+.div-status-usuario{
     display: flex;
     flex-direction: column;
-    border-left: 1px solid gray;
-    background-color: white
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-.div-chat {
-    flex-grow: 1;
-    background-image: url(../imagens/fundo.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.div-banner-chat {
-    flex-basis: 65px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    
+
 }
 
-.div-banner-chat h2{
+#usurio{
+  color: white;
+  font-size: 24px;
+  font-family: var(--fontInter);
+}
+
+#status-usurio{
     color: white;
-    font-family: var(--fontBaloo);
+    font-size: 24px
+  }
+
+  #card-usurio{
+    color: black;
+    font-size: 24px;
+    font-family: var(--fontInter);
+    
+   
+  }
+  
+  #card-status-usurio{
+      color: var(--CorHeader);
+      font-size: 24px
+    }  
+.div-contaner-chat{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
-.div-emoji {
-    height: 200px;
+.div-usuario-online{
+    border: 1px solid black;
+    width: 20%;
+    display: none;
+    flex-direction: column;
     background-color: white;
+    overflow: hidden;
+   
+    
+
+}
+.div-sala-batepapo{
+    width: 80%;
+    height: 100vh;
     display: flex;
-    overflow: auto;
+    flex-direction: column;
+    position: relative;
+  
+}
+
+.div-panel-envio{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 102px;
+    /* background-color: var(--CorHeader); */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+
+
+.div-menu-emoji{
+    width: 100%;
+    position: fixed;
+    height: 150px;
+    background-color: white;
+    bottom:100px ;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
+    padding: 10px;
+    gap: 10px;
     border-top: 1px solid gray;
+    align-items: center;
+    overflow: auto;
+}
+
+.div-menu-emoji .icons-emo{
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+
+
+}
+
+.div-menu-emoji.close-menu{
     display: none;
 }
-
-.div-emoji img {
-
-    cursor: pointer;
-    flex-basis: 50px;
+#btn-envia{
+    width: 150px;
     height: 50px;
-    width: 50px;
-
+    font-family: var(--fontInter);
+    font-size: 24px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--CorHeader);
+    font-family: var(--fontInter);
+    border: 1px solid #f3f2f0;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.icones-envio{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
 }
 
-.mostrar-emoji {
-    display: flex;
-
-}
-
-
-
-.div-msg {
-    flex-basis: 60px;
-    display: flex;
-    border-top: 1px solid gray;
-}
-
-.div-text-msg {
-    background-color: white;
-    flex-grow: 1;
-    display: flex;
-  
-   
-}
-
-.div-text-msg #txt-msg {
-    flex-grow: 1;
-    padding: 10px;
-    font-size: 1.4em;
+.div-panel-envio textarea{
+    width: 100%;
+    height: 100px;
+    line-height: 25px;
+    font-size: 1.5em;
+    padding: 20px;
+    font-family: var(--fontInter);
     outline: none;
     border: none;
-   
+    
 }
 
-.div-ico {
-    background-color: white;
-    flex-basis: 80px;
+.div-panel-envio textarea::-webkit-scrollbar{
+    width: 7px;
+    background-color: var(--CorHeader);
+    border-radius: 20px;
+}
+
+#form-pesquisa-usuario{
+    width: 100%;
+}
+
+.div-usuario-online input{
+    width: 100%;
+    line-height: 53px;
+    font-size: 2em;
+    padding-left: 10px;
+}
+
+.card-usuario-online{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    position: relative;
     gap: 10px;
 }
 
-.div-ico img {
-    max-width: 30px;
+.card-usuario-online:hover{
+    color: white;
+    background-color: var(--CorHeader);
     cursor: pointer;
+    opacity: 0.6;
 }
 
-.div-btn {
+.card-usuario-online .div-usuario-img{
     background-color: white;
-    flex-basis: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.div-btn a {
-    text-decoration: none;
-    background-color: var(--CorHeader);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.div-pesquisa-usuario {
-    display: flex;
-
-}
-
-.div-input {
-    display: flex;
-
-}
-
-.div-input input {
-    padding-left: 10px;
-    line-height: 25px;
-    width: 175px;
-
-
-}
-
-.div-ico-pesquisa {
-    padding: 10px
-}
-
-.div-ico-pesquisa a {
-    color: white;
-
-
-}
-
-.div-card-usuario {
-    display: flex;
-    border-bottom: 1px solid gray;
-    height: 70px;
-}
-
-.div-foto-usuario {
-    flex-grow: 1;
-    display: flex;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+    margin-left: 20px; 
+    border: 1px solid black;
 }
 
-.div-status-card {
-    flex-basis: 90px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.div-status-card>h2 {
-    font-size: 1em;
-
-}
-
-.div-status-card>h3 {
-    font-size: 1em;
-}
-
-.div-btn-usuario {
-    flex-basis: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.div-btn-usuario>a {
-    background-color: var(--CorHeader);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
+.card-usuario-online #status-horas{
+    position: absolute;
+    color: var(--CorHeader);
+    right: 15px;
+    top: 20px;
     font-weight: bold;
-}
-
-.div-foto-usuario>img {
-    width: 100%;
-    border-radius: 50%;
-    height: 60px;
-    max-width: 60px;
-}
-
-.div-online-mob{
-    display: flex;
-}
-.btn-mostrar-listausuario{
-    display: none;
-}
-
-
-
-
-
-
-@media screen and (min-width: 1024px) {
-    .div-online {
-        display: flex;
-        transition: all 10s;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-   
-
-    .div-mostrar{
-        display: none;
-    }
-
-    .div-lista-usuarios {
-        background-color: white;
-        overflow: auto;
-
-
-    }
-
-    .div-banner-chat {
-        flex-basis: 65px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .div-banner-chat h2{
-        color: white;
-        font-family: var(--fontBaloo);
-    }
-
-    .div-card-usuario {
-        display: flex;
-        border-bottom: 1px solid gray;
-        height: 70px;
-    }
-
-    .div-foto-usuario {
-        flex-grow: 1;
-        display: flex;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .div-status-card {
-        flex-basis: 90px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .div-status-card>h2 {
-        font-size: 1em;
-
-    }
-
-    .div-status-card>h3 {
-        font-size: 1em;
-    }
-
-    .div-btn-usuario {
-        flex-basis: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .div-btn-usuario>a {
-        background-color: var(--CorHeader);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 20px;
-        font-weight: bold;
-    }
-
-    .div-foto-usuario>img {
-        width: 100%;
-        border-radius: 50%;
-        height: 60px;
-        max-width: 60px;
-    }
 }
